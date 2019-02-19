@@ -1,0 +1,398 @@
+@charset "UTF-8";
+
+/*geral ........................................................*/
+
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: #4d4d4d;
+}
+
+h1,h2,h3{
+	margin: 0;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+.botao {
+	color: #f1f1f1;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #8f3faf;
+	font-size: .9em;
+	border-radius: 3px;
+}
+
+.containerflex{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*botao menu animado .......................................*/
+
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.btmenu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	background-color: #8f3faf;
+	width: 45px;
+	height: 35px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.hamburguer{
+	background: #f1f1f1;
+	width: 25px;
+	height: 2px;
+	position: relative;
+	border-radius: 10px;
+	transition: .5s ease-in-out all;
+}
+
+.hamburguer:before,
+.hamburguer:after{
+	background-color: #f1f1f1;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	position: absolute;
+	transition: .5s ease-in-out all;
+}
+
+.hamburguer:before{
+	top: -6px;
+}
+.hamburguer:after{
+	bottom: -6px;
+}
+
+input{
+	display: none;
+}
+
+input:checked ~ label .btmenu{
+	border-radius: 50%;
+	background-color: #f1f1f1;
+}
+
+input:checked ~ label .hamburguer{
+	transform: rotate(45deg);
+	background-color: #8f3faf;
+}
+input:checked ~ label .hamburguer:before{
+	transform: rotate(90deg);
+	top:0;
+	background-color: #8f3faf;
+}
+input:checked ~ label .hamburguer:after{
+	transform: rotate(90deg);
+	bottom: 0;
+	background-color: #8f3faf;
+}
+
+
+/*nav-Bar.......................................................*/
+
+
+
+nav div{
+	display: flex;
+	flex-direction: row-reverse;
+	align-items:center;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	width: 100%;
+}
+nav.menu{
+	background-color: #4d4d4d;
+	padding: 7px 0;
+	position: fixed;
+	width: 100%;
+}
+
+#logo{
+	text-decoration: none;
+	color: #f1f1f1;
+	font-family: pacifico, serif;
+	font-weight: 700;
+	font-size: 1.5em;
+	margin-left: 10px; 
+}
+.menu  h1{
+	display: none;
+}
+
+
+.menu ul{
+	display: none;
+	list-style: none;
+    padding: 0;
+	width: 100%;
+	margin: 0;
+	margin-top: 5px;
+	border-top: 1px solid #8f3faf;
+}
+
+/* .menu-open ul{
+display: block;
+} */
+
+.menu ul li{
+	text-align: center;
+	width: 100%;
+}
+.menu ul li:hover{
+	background-color: #8f3faf;
+
+}
+
+.menu ul li a{
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: #f1f1f1;
+}
+/*header ...................................................*/
+header{
+	background-image: url(../imagens/backgroundblueabstract.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	color: #f1f1f1;
+	text-align: center;
+	padding: 70px 20px 20px;
+}
+header h1{
+	margin: 0;
+}
+header p {
+	margin-bottom: 2em;
+}
+
+/*Sobre..................................................*/
+
+#sobre{
+	background-color: #8f3faf;
+	color: #f1f1f1;
+	text-align: center;
+	padding: 10px 20px 20px;
+}
+
+#sobre p {
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+}
+
+#sobre .botao {
+	background-color: #f1f1f1;
+	color: #4d4d4d;
+}
+
+/*serviços .....................................................*/
+
+#servicos{
+	padding: 20px;
+}
+
+#servicos div {
+	margin-top: 30px;
+	text-align: center;
+}
+
+/*Portifolio.................................................*/
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#portfolio h2 {
+    margin-bottom: 20px;
+}
+
+#portfolio img {
+    width: 100%;
+}
+
+/*contato ..................................................*/
+
+#contato img{
+	width: 100%;
+	max-width: 100px;
+}
+#contato {
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+a{
+	text-decoration: none;
+	color: #4d4d4d;
+}
+
+/*FOOTER.......................................................*/
+
+footer {
+	text-align: center;
+	padding: 10px;
+	background-color: #4d4d4d;
+	color: #f1f1f1;
+}
+
+@media screen and (min-width: 768px) {
+	/*
+	NAVEGAÇÃO
+	*/
+	.btmenu{
+		display: none;
+	}
+	nav.menu {
+		flex-direction: row;
+		justify-content: space-around;
+		padding: 0;
+		background-color: rgb(77, 77, 77, .5);
+		
+	}
+
+	.menu ul {
+		display: flex;
+		flex-direction: row;
+		width: 70%;
+		border-top: none;
+		margin-top: 0;
+	}
+	.menu ul li{
+		padding: 10px;
+	}
+	.menu ul li a{
+		color: #fff;
+		text-shadow: 1px 1px;
+	}
+	nav div{
+		width: 30%;
+	}
+
+	/*
+	CABEÇALHO
+	*/
+
+	header {
+		height: 600px;
+		height: 60vh;
+		justify-content: center;
+		background-image: url(../imagens/codando.jpg);
+	}
+
+	/*
+	SOBRE
+	*/
+
+	#sobre {
+		height: 250px;
+		height: 30vh;
+		justify-content: center;
+		min-height: 250px;
+	}
+
+	/*
+	SERVIÇOS
+	*/
+
+	#servicos {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	#servicos h2 {
+		text-align: center;
+		width: 100%;
+	}
+
+	#servicos div {
+		flex-grow: 1;
+		flex-basis: 150px;
+		padding: 0 10px;
+	}
+
+	/*
+	PORTFOLIO
+	*/
+
+	#portfolio {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center
+	}
+
+	#portfolio h2 {
+		width: 100%;
+		text-align: center;
+	}
+
+	#portfolio img {
+		width: 31%;
+		padding: 20px 10px;
+	}
+	
+	.desktop{
+		height: 40vh;
+	}
+	.mobile{
+		height:  75vh;
+	}
+
+	/*
+	CONTATO
+	*/
+
+	#contato {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content:center;
+		align-items: center;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	#contato div{
+		width: 50%;
+	}
+	#contato h2,
+	#contato p {
+		width: 100%;
+
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
