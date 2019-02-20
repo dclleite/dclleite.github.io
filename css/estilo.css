@@ -116,7 +116,7 @@ nav div{
 	width: 100%;
 }
 nav.menu{
-	background-color: #4d4d4d;
+	background-color: #262626;
 	padding: 7px 0;
 	position: fixed;
 	width: 100%;
@@ -145,9 +145,7 @@ nav.menu{
 	border-top: 1px solid #8f3faf;
 }
 
-/* .menu-open ul{
-display: block;
-} */
+
 
 .menu ul li{
 	text-align: center;
@@ -167,13 +165,21 @@ display: block;
 }
 /*header ...................................................*/
 header{
-	background-image: url(../imagens/backgroundblueabstract.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size:cover;
+	/* background-image: url(../imagens/backgroundblueabstract.jpg); */
+	/* background-size: cover; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #0c191c;
+	height: 100vh;
 	color: #f1f1f1;
 	text-align: center;
-	padding: 70px 20px 20px;
+}
+header .botao{
+	margin-top: 20px;
+	border-radius: 20%;
+}
 }
 header h1{
 	margin: 0;
@@ -189,6 +195,7 @@ header p {
 	color: #f1f1f1;
 	text-align: center;
 	padding: 10px 20px 20px;
+	height: 50vh;
 }
 
 #sobre p {
@@ -230,33 +237,49 @@ header p {
 
 /*contato ..................................................*/
 
-#contato img{
-	width: 100%;
-	max-width: 100px;
-}
+
 #contato {
 	text-align: center;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	background-color: #2a3e51;
+	color: #f1f1f1;
+	height: 500px;
 	padding: 20px;
+}
+#contato h2{
+	font-size: 3em;
+	padding-bottom: 10px;
+}
+#contato p{
+	margin: 5px;
+}
+#contato div{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+}
+#contato img{
+	padding: 10px 20px;
 }
 a{
 	text-decoration: none;
-	color: #4d4d4d;
+	color: #f1f1f1;
 }
 
 /*FOOTER.......................................................*/
 
 footer {
 	text-align: center;
-	padding: 10px;
-	background-color: #4d4d4d;
+	padding: 5px;
+	background-color: #262626;
 	color: #f1f1f1;
 }
 
 @media screen and (min-width: 768px) {
 	/*
-	NAVEGAÇÃO
+	NAVEGAÇÃO..................................................
 	*/
 	.btmenu{
 		display: none;
@@ -288,30 +311,30 @@ footer {
 	}
 
 	/*
-	CABEÇALHO
+	CABEÇALHO..................................................
 	*/
 
 	header {
 		height: 600px;
-		height: 60vh;
+		height: 100vh;
 		justify-content: center;
 		background-image: url(../imagens/codando.jpg);
+		background-size: cover;
 	}
 
 	/*
-	SOBRE
+	SOBRE ..................................................
 	*/
 
 	#sobre {
 		height: 250px;
-		height: 30vh;
+		height: 50vh;
 		justify-content: center;
 		min-height: 250px;
 	}
 
-	/*
-	SERVIÇOS
-	*/
+	
+/*SERVIÇOS..................................................*/
 
 	#servicos {
 		flex-direction: row;
@@ -365,23 +388,7 @@ footer {
 	CONTATO
 	*/
 
-	#contato {
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content:center;
-		align-items: center;
-		max-width: 600px;
-		margin: 0 auto;
-	}
 
-	#contato div{
-		width: 50%;
-	}
-	#contato h2,
-	#contato p {
-		width: 100%;
-
-	}
 
 
 
