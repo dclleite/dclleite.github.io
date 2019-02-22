@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*geral ........................................................*/
+/* GERAL_____________________________________________________*/
 
 body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -8,7 +8,7 @@ body {
 }
 
 h1,h2,h3{
-	margin: 0;
+	margin:0;
 	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 	font-weight: 700;
 }
@@ -19,15 +19,12 @@ h1,h2,h3{
 	padding: 10px 30px;
 	background-color: #8f3faf;
 	font-size: .9em;
-	border-radius: 3px;
+	border-radius: 8px;
 }
 
-.containerflex{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-/*botao menu animado .......................................*/
+
+
+/*BTN MENU ANIMADO__________________________________________*/
 
 *:before,
 *:after {
@@ -103,8 +100,10 @@ input:checked ~ label .hamburguer:after{
 }
 
 
-/*nav-Bar.......................................................*/
 
+
+
+/*NAV_BAR___________________________________________*/
 
 
 nav div{
@@ -130,7 +129,7 @@ nav.menu{
 	font-size: 1.5em;
 	margin-left: 10px; 
 }
-.menu  h1{
+.menu  h2{
 	display: none;
 }
 
@@ -138,7 +137,7 @@ nav.menu{
 .menu ul{
 	display: none;
 	list-style: none;
-    padding: 0;
+	padding: 0;
 	width: 100%;
 	margin: 0;
 	margin-top: 5px;
@@ -163,10 +162,16 @@ nav.menu{
 	text-decoration: none;
 	color: #f1f1f1;
 }
-/*header ...................................................*/
+
+
+
+/*HEADER_______________________________________________________*/
+
+
 header{
-	/* background-image: url(../imagens/backgroundblueabstract.jpg); */
-	/* background-size: cover; */
+	background-image: linear-gradient(to right,rgba(0,0,0,.9), rgba(0,0,0,.5), rgba(0,0,0,.9)), url(../imagens/codando.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -176,26 +181,34 @@ header{
 	color: #f1f1f1;
 	text-align: center;
 }
+
 header .botao{
 	margin-top: 20px;
 	border-radius: 20%;
 }
-}
-header h1{
-	margin: 0;
-}
-header p {
-	margin-bottom: 2em;
-}
 
-/*Sobre..................................................*/
+
+header p {margin:0 1em 2em;}
+
+
+
+
+/*SOBRE_________________________________________________________*/
+
 
 #sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 	background-color: #8f3faf;
 	color: #f1f1f1;
-	text-align: center;
 	padding: 10px 20px 20px;
 	height: 50vh;
+}
+#sobre h2{
+	text-transform: uppercase;
 }
 
 #sobre p {
@@ -208,67 +221,95 @@ header p {
 	color: #4d4d4d;
 }
 
-/*serviços .....................................................*/
+
+
+/*SERVIÇOS_______________________________________________*/
+
 
 #servicos{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding: 20px;
 }
 
 #servicos div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin-top: 30px;
 	text-align: center;
 }
 
-/*Portfolio.................................................*/
+
+
+/*PORTFÓLIO________________________________________________*/
+
+
 #portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
 }
 
-#portfolio h2 {
-    margin-bottom: 20px;
-}
+#portfolio h2 {margin-bottom: 20px;}
 
 #portfolio img {
-    width: 100%;
+	width: 70%;
+	margin: 8px;
+	border: 2px solid black;
 }
 
-/*contato ..................................................*/
+
+
+
+/*CONTATO____________________________________________________*/
+
 
 
 #contato {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
 	background-color: #2a3e51;
 	color: #f1f1f1;
-	height: 500px;
+	height: 100vh;
 	padding: 20px;
 }
 #contato h2{
 	font-size: 3em;
 	padding-bottom: 10px;
 }
-#contato p{
-	margin: 5px;
-}
+
+#contato p{margin: 5px;}
+
 #contato div{
 	display: flex;
 	text-align: center;
 	align-items: center;
 	justify-content: space-around;
 }
-#contato img{
-	padding: 10px 20px;
-}
-a{
-	text-decoration: none;
-	color: #f1f1f1;
+
+.icones{
+	display: block;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	border: 2px solid #f1f1f1;
+	border-radius: 50%;
+	margin: 20px 5px;
 }
 
-/*FOOTER.......................................................*/
+
+
+
+/*FOOTER_____________________________________________*/
+
+
 
 footer {
 	text-align: center;
@@ -277,19 +318,22 @@ footer {
 	color: #f1f1f1;
 }
 
+
+/*DESKTOP_____________________________________*/
+
+
 @media screen and (min-width: 768px) {
-	/*
-	NAVEGAÇÃO..................................................
-	*/
-	.btmenu{
-		display: none;
-	}
+	
+	/*NAVEGAÇÃO....................................*/
+	
+	.btmenu{display: none;}
+	
 	nav.menu {
+		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 		padding: 0;
 		background-color: rgb(77, 77, 77, .5);
-		
 	}
 
 	.menu ul {
@@ -299,32 +343,29 @@ footer {
 		border-top: none;
 		margin-top: 0;
 	}
-	.menu ul li{
-		padding: 10px;
-	}
+	
+	.menu ul li{padding: 10px;}
+	
 	.menu ul li a{
 		color: #fff;
 		text-shadow: 1px 1px;
 	}
-	nav div{
-		width: 30%;
-	}
+	
+	nav div{width: 30%;}
 
-	/*
-	CABEÇALHO..................................................
-	*/
+	/*CABEÇALHO......................................*/
 
 	header {
 		height: 600px;
 		height: 100vh;
-		justify-content: center;
-		background-image: url(../imagens/codando.jpg);
 		background-size: cover;
 	}
+	
+	header h1{
+		font-size: 3em;
+	}
 
-	/*
-	SOBRE ..................................................
-	*/
+	/*SOBRE ............................................*/
 
 	#sobre {
 		height: 250px;
@@ -333,8 +374,7 @@ footer {
 		min-height: 250px;
 	}
 
-	
-/*SERVIÇOS..................................................*/
+	/*SERVIÇOS..................................................*/
 
 	#servicos {
 		flex-direction: row;
@@ -355,9 +395,7 @@ footer {
 		padding: 0 10px;
 	}
 
-	/*
-	PORTFOLIO
-	*/
+	/*PORTFOLIO.............................................*/
 
 	#portfolio {
 		display: flex;
@@ -376,7 +414,7 @@ footer {
 		width: 31%;
 		padding: 20px 10px;
 	}
-	
+
 	.desktop{
 		height: 250px;
 	}

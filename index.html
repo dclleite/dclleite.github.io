@@ -8,13 +8,14 @@
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/estilo.css">
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/svgs.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 
 	<body>
 
-		<nav class="menu containerflex">
+		<nav class="menu">
 			<div>
 				<input id="check" type="checkbox" >
 				<label for="check">
@@ -26,9 +27,9 @@
 					Eduardo Leite
 				</a>
 			</div>
-			<h1>Menu Principal</h1>
+			<h2>Menu Principal</h2>
 
-			<ul class="containermenuflex">
+			<ul class="">
 				<li><a href="#sobre">Sobre</a></li>
 				<li><a href="#servicos">Serviços</a></li>
 				<li><a href="#portfolio">Portfólio</a></li>
@@ -38,36 +39,36 @@
 
 		<header>
 			<h1>Eduardo Carvalho Leite</h1>
-			<h2>Faça da sua vida algo mais<br>"Responsivo"</h2>
-			<p>Desenvolvimento Web</p>
+			<p>Nunca desista de um sonho só por causa do tempo que você vai levar para realizá-lo. O tempo vai passar de qualquer forma.
+			</p>
 			<a href="#sobre" class="botao">Ver Mais</a>
 
 		</header>
 
-		<section id="sobre" class="containerflex">
-			<h2>Buscando sempre o melhor para você.</h2>
-			<p>Com criatividade, organização e compromisso</p>
-			<a href="#contato" class="botao">ENTRE EM CONTATO</a>
+		<section id="sobre">
+			<h2>Sobre mim</h2>
+			<p>Procuro aprender com as pessoas, e também passar o que sei pra elas. Busco sempre crescimento pessoal e profissional. <br><br>Amante da tecnologia e tudo que está ligado a ela. <br><br>Cusei até o terceiro período em Sistemas de Informação no IFSM Machado. Atualmente estou cursando Ciência da Computação na UFLA. </p>
+			<a href="#contato" class="botao">ME ENVIE UMA MENSAGEM</a>
 		</section>
 
-		<section id="servicos" class="containerflex">
+		<section id="servicos">
 			<h2>Serviços</h2>
-			<div class="containerflex">
+			<div>
 				<img src="imagens/site.png" alt="Navegador">
 				<h3>Marcar Presença Online</h3>
 				<p>Quem não é visto, não é lembrado. A frase pode até ser batida, mas ela explica perfeitamente o porquê de fazer um site.</p>
 			</div>
-			<div class="containerflex">
+			<div >
 				<img src="imagens/configs.png" alt="Engrenagens">
 				<h3>Responsividade</h3>
 				<p>Seu site adaptável a qualquer aparelho, sem dores de cabeça. Uma melhor experiência ao usuario final.</p>
 			</div>
-			<div class="containerflex">
+			<div >
 				<img src="imagens/hospedagem.png" alt="Servidor">
 				<h3>24 Horas</h3>
 				<p>A sua empresa aberta 24 horas do dia, durante 365 dias do ano.</p>
 			</div>
-			<div class="containerflex">
+			<div>
 				<img src="imagens/coracao.png" alt="Coração">
 				<h3>Feito com Amor</h3>
 				<p>Não menos importante, se ainda não está convencido, tudo será feito com muito amor! </p>
@@ -85,16 +86,49 @@
 
 		</section>
 
-		<section id="contato" class="containerflex">
+		<section id="contato">
 			<h2>Contato</h2>
 			<p>Entre em contato! <br><br><br></p>
 			<p>Eduardo Carvalho Leite </p>
 			<p>Aluno de Ciência da Computação</p>
 			<p>Universidade Federal de Lavras</p> <p>eduappsplay@gmail.com</p>
 			<div>
-				<p><a href="tel:35988472744"><img src="imagens/whatsapp-logo.png" alt="fone"><br>WhatsApp</a></p>
 
-				<p><a href="eduappsplay@gmail.com"><img src="imagens/emailenvelope.png" alt="fone"><br>Email</a></p>
+				<div class="icones">
+					<a href="#">
+						<svg  x="0px" y="0px"
+							 width="40" height="40"
+							 viewBox="0 0 50 50"
+							 style=" fill:#f1f1f1;">    <path d="M 8 3.0097656 C 4.53 3.0097656 2.0097656 5.0892187 2.0097656 7.9492188 C 2.0097656 10.819219 4.59 12.990234 8 12.990234 C 11.47 12.990234 13.990234 10.870625 13.990234 7.890625 C 13.830234 5.020625 11.36 3.0097656 8 3.0097656 z M 3 15 C 2.45 15 2 15.45 2 16 L 2 45 C 2 45.55 2.45 46 3 46 L 13 46 C 13.55 46 14 45.55 14 45 L 14 16 C 14 15.45 13.55 15 13 15 L 3 15 z M 18 15 C 17.45 15 17 15.45 17 16 L 17 45 C 17 45.55 17.45 46 18 46 L 27 46 C 27.552 46 28 45.552 28 45 L 28 30 L 28 29.75 L 28 29.5 C 28 27.13 29.820625 25.199531 32.140625 25.019531 C 32.260625 24.999531 32.38 25 32.5 25 C 32.62 25 32.739375 24.999531 32.859375 25.019531 C 35.179375 25.199531 37 27.13 37 29.5 L 37 45 C 37 45.552 37.448 46 38 46 L 47 46 C 47.55 46 48 45.55 48 45 L 48 28 C 48 21.53 44.529063 15 36.789062 15 C 33.269062 15 30.61 16.360234 29 17.490234 L 29 16 C 29 15.45 28.55 15 28 15 L 18 15 z"></path></svg><br></a>
+				</div>
+
+				<div class="icones">
+					<a href="https://www.facebook.com/eduardo.carvalho.560272">
+						<svg  x="0px" y="0px"
+							 width="40" height="40"
+							 viewBox="0 0 24 24"
+							 style=" fill:#f1f1f1;">    <path d="M16.403,9H14V7c0-1.032,0.084-1.682,1.563-1.682h0.868c0.552,0,1-0.448,1-1V3.064c0-0.523-0.401-0.97-0.923-1.005 C15.904,2.018,15.299,1.999,14.693,2C11.98,2,10,3.657,10,6.699V9H8c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1l2-0.001V21 c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1v-8.003l2.174-0.001c0.508,0,0.935-0.381,0.993-0.886l0.229-1.996 C17.465,9.521,17.001,9,16.403,9z"></path></svg>
+					</a>
+				</div>
+
+				<div class="icones">
+					<a href="https://www.instagram.com/dclleite/?hl=pt-br">
+						<svg x="0px" y="0px"
+							 width="40" height="40"
+							 viewBox="0 0 24 24"
+							 style=" fill:#f1f1f1;">    <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path></svg>
+					</a>
+				</div>
+				
+				<div class="icones">
+				<a href="https://github.com/dclleite">
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						 width="40" height="40"
+						 viewBox="0 0 30 30"
+						 style=" fill:#f1f1f1;">    <path d="M 4.6582031 4 C 3.6182031 6.431 4.0382031 8.4602656 4.4082031 9.5722656 C 2.9152031 11.172266 2.0019531 13.3765 2.0019531 16.3125 C 2.0019531 23.5795 6.5919531 26 15.001953 26 C 23.411953 26 28.001953 23.5795 28.001953 16.3125 C 28.002953 13.4765 27.036656 11.264766 25.472656 9.6347656 C 25.696656 9.2667656 26.003906 8.5485 26.003906 7.1875 C 26.003906 5.1405 25.316406 4 25.316406 4 C 24.247406 4 21.735203 4.4310469 19.658203 6.4980469 C 18.183203 6.1310469 16.610906 6 15.003906 6 C 13.429906 6 11.888406 6.0862969 10.441406 6.4042969 C 10.348406 6.3182969 7.7612031 4 4.6582031 4 z M 10.005859 13.5 C 11.308859 13.514 13.458906 13.999 15.003906 14 C 16.548906 13.999 18.697 13.514 20 13.5 C 22.522 13.5 24 15.502656 24 17.972656 C 24 22.024656 21.656859 23.999 15.005859 24 L 15.003906 24 L 15 24 C 8.349 23.999 6.0058594 22.024656 6.0058594 17.972656 C 6.0058594 15.502656 7.4838594 13.5 10.005859 13.5 z M 10.5 17 A 1.5 2 0 0 0 9 19 A 1.5 2 0 0 0 10.5 21 A 1.5 2 0 0 0 12 19 A 1.5 2 0 0 0 10.5 17 z M 19.5 17 A 1.5 2 0 0 0 18 19 A 1.5 2 0 0 0 19.5 21 A 1.5 2 0 0 0 21 19 A 1.5 2 0 0 0 19.5 17 z"></path></svg>
+				</a>
+	</div>
+
 			</div>
 		</section>
 
