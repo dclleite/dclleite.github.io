@@ -255,9 +255,12 @@ header p {margin:0 1em 2em;}
 #portfolio h2 {margin-bottom: 20px;}
 
 #portfolio img {
-	width: 70%;
 	margin: 8px;
 	border: 2px solid black;
+}
+
+.mobile,.desktop{
+	width: 80%;
 }
 
 
@@ -322,11 +325,11 @@ footer {
 
 
 @media screen and (min-width: 768px) {
-	
+
 	/*NAVEGAÇÃO....................................*/
-	
+
 	.btmenu{display: none;}
-	
+
 	nav.menu {
 		display: flex;
 		flex-direction: row;
@@ -342,14 +345,14 @@ footer {
 		border-top: none;
 		margin-top: 0;
 	}
-	
+
 	.menu ul li{padding: 10px;}
-	
+
 	.menu ul li a{
 		color: #fff;
 		text-shadow: 1px 1px;
 	}
-	
+
 	nav div{width: 30%;}
 
 	/*CABEÇALHO......................................*/
@@ -359,7 +362,7 @@ footer {
 		height: 100vh;
 		background-size: cover;
 	}
-	
+
 	header h1{
 		font-size: 3em;
 	}
@@ -410,15 +413,18 @@ footer {
 	}
 
 	#portfolio img {
-		width: 31%;
+		padding: 0;
+		margin: 0;
 		padding: 20px 10px;
+		border: none;
 	}
 
-	.desktop{
-		height: 250px;
+	img.desktop{
+		width: 47%;
 	}
 	.mobile{
-		height: 500px;
+		width: 30%;
+		height: 450px;
 	}
 
 	/*
