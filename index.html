@@ -29,8 +29,9 @@
 
 			<ul>
 				<li><a class="linkInterno" href="#sobre">Sobre</a></li>
-				<li><a class="linkInterno" href="#servicos">Serviços</a></li>
+				<li><a class="linkInterno" href="#habilidades">Serviços</a></li>
 				<li><a class="linkInterno" href="#portfolio">Portfólio</a></li>
+				<li><a class="linkInterno" href="#formulario">Formulário</a></li>
 				<li><a class="linkInterno" href="#contato">Contato</a></li>
 			</ul>
 		</nav>
@@ -46,31 +47,31 @@
 		<section id="sobre">
 			<h2>Sobre mim</h2>
 			<p>Procuro aprender mais, compreender mais, sonhar alto e alcançar meus objetivos. Quero conquistar novos conhecimentos, todos os dias. <br><br>Amante da tecnologia e tudo que está ligado a ela. <br><br>Cursei até o terceiro período de Sistemas de Informação, no IFMG Machado. Atualmente estou cursando Ciência da Computação na UFLA. </p>
-			<a href="#contato" class="botao">ME ENVIE UMA MENSAGEM</a>
+			<a href="#formulario" class="botao">ME ENVIE UMA MENSAGEM</a>
 		</section>
 
-		<section id="servicos">
-			<h2>Serviços</h2>
+		<section id="habilidades">
+			<h2>Habilidades</h2>
 			<div>
-				<img src="imagens/site.png" alt="Navegador">
-				<h3>Marcar Presença Online</h3>
-				<p>Quem não é visto, não é lembrado. A frase pode até ser batida, mas ela explica perfeitamente o porquê de fazer um site.</p>
+				<h3>Html 5</h3>
+				<img src="imagens/icon_html5.svg" alt="Html5">
+				<p>Estruturar o conteúdo das páginas. Deixar o mesmo conteúdo semântico.</p>
 			</div>
 			<div >
-				<img src="imagens/configs.png" alt="Engrenagens">
-				<h3>Responsividade</h3>
-				<p>Seu site adaptável a qualquer aparelho, sem dores de cabeça. Uma melhor experiência ao usuario final.</p>
+				<h3>Css 3</h3>
+				<img src="imagens/icon_css3.svg" alt="Css3">
+				<p>Características visuais, bem como deixar o conteúdo responsivo.</p>
 			</div>
 			<div >
-				<img src="imagens/hospedagem.png" alt="Servidor">
-				<h3>24 Horas</h3>
-				<p>A sua empresa aberta 24 horas do dia, durante 365 dias do ano.</p>
+				<h3>Jquery</h3>
+				<img class="jquery" src="imagens/icon_jquery.svg" alt="Jquery">
+				<p>Comportamentos e funcionalidades das funções.</p>
 			</div>
-			<div>
-				<img src="imagens/coracao.png" alt="Coração">
-				<h3>Feito com Amor</h3>
-				<p>Não menos importante, se ainda não está convencido, tudo será feito com muito amor! </p>
-			</div>
+			<!-- <div>
+<img src="imagens/coracao.png" alt="Coração">
+<h3>Feito com Amor</h3>
+<p>Não menos importante, se ainda não está convencido, tudo será feito com muito amor! </p>
+</div> -->
 		</section>
 
 		<section id="portfolio" >
@@ -83,6 +84,23 @@
 			<img class="mobile" src="imagens/servicos_mobile.jpeg" alt="Trabalho Pessoal">
 
 		</section>
+
+
+		<form id="formulario" action="https://formspree.io/eduappsplay@gmail.com" method="POST">
+			<fieldset>
+				<h2>Me envie uma mensagem</h2>
+				<!-- Título/Assunto do Email. -->
+				<input type='text' name='nome' placeholder='Nome:'>
+
+				<!-- Email de Resposta. -->
+				<input type='text' name='email' placeholder='Email p/ contato:'>
+
+				<!-- Mensagem que será submetida. -->
+				<textarea name='mensagem' placeholder="Mensagem:"></textarea>
+
+				<button type='submit'>Enviar</button>
+			</fieldset>
+		</form>
 
 		<section id="contato">
 			<h2>Contato</h2>

@@ -75,7 +75,7 @@ h1,h2,h3{
 	bottom: -6px;
 }
 
-input{
+input#check{
 	display: none;
 }
 
@@ -224,14 +224,14 @@ header p {margin:0 1em 2em;}
 /*SERVIÇOS_______________________________________________*/
 
 
-#servicos{
+#habilidades{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 20px;
 }
 
-#servicos div {
+#habilidades div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -239,6 +239,9 @@ header p {margin:0 1em 2em;}
 	text-align: center;
 }
 
+#habilidades img{
+	width: 200px;
+}
 
 
 /*PORTFÓLIO________________________________________________*/
@@ -249,13 +252,18 @@ header p {margin:0 1em 2em;}
 	flex-direction: column;
 	align-items: center;
 	padding-top: 20px;
+	padding-bottom: 40px;
+	background-color: #3b3b3b;
 }
 
-#portfolio h2 {margin-bottom: 20px;}
+#portfolio h2 {
+	margin-bottom: 20px;
+	color: #f1f1f1;
+	font-size: 3em;
+}
 
 #portfolio img {
 	margin: 8px;
-	border: 2px solid black;
 }
 
 .mobile,.desktop{
@@ -263,7 +271,53 @@ header p {margin:0 1em 2em;}
 }
 
 
+/*FORM_______________________________________________________*/
 
+#formulario{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	height: 70vh;
+}
+
+#formulario fieldset{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border: none;
+	padding: 20px;
+	width: 90%;
+	max-width: 900px;
+
+}
+
+#formulario input, #formulario textarea{
+	margin: 10px auto;
+	width: 100%;
+	padding: 10px;
+	background-color: #f1f1f1;
+}
+
+#formulario button{
+	margin: 20px auto;	
+	color: #f1f1f1;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #262626;
+	font-size: .9em;
+	text-transform: uppercase;
+	border-radius: 8px;
+}
+
+#formulario fieldset h2{
+	font-size: 2em;
+	margin: 10px 0px 50px;
+	text-transform: uppercase;
+	color: #262626;
+}
 
 /*CONTATO____________________________________________________*/
 
@@ -376,7 +430,7 @@ footer {
 
 	/*SERVIÇOS..................................................*/
 
-	#servicos {
+	#habilidades {
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: flex-start;
@@ -384,12 +438,12 @@ footer {
 		margin: 0 auto;
 	}
 
-	#servicos h2 {
+	#habilidades h2 {
 		text-align: center;
 		width: 100%;
 	}
 
-	#servicos div {
+	#habilidades div {
 		flex-grow: 1;
 		flex-basis: 150px;
 		padding: 0 10px;
