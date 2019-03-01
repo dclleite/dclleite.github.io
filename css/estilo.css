@@ -295,10 +295,14 @@ header p {margin:0 1em 2em;}
 }
 
 #formulario input, #formulario textarea{
-	margin: 10px auto;
-	width: 100%;
+	border: none;
+	margin: 20px auto;
 	padding: 10px;
-	background-color: #f1f1f1;
+	width: 100%;
+	max-width: 600px;
+	text-align: center;
+	border-bottom: 1px solid black;
+	border-radius: 2px;
 }
 
 #formulario button{
@@ -310,6 +314,10 @@ header p {margin:0 1em 2em;}
 	font-size: .9em;
 	text-transform: uppercase;
 	border-radius: 8px;
+	cursor: pointer;
+}
+#formulario button:hover{
+	background: #8f3faf;
 }
 
 #formulario fieldset h2{
