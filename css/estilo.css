@@ -23,6 +23,13 @@ h1,h2,h3{
 }
 
 
+/* .botao:hover{
+opacity: .8;
+transition: all .7s;
+} */
+
+
+
 
 /*BTN MENU ANIMADO__________________________________________*/
 
@@ -186,6 +193,12 @@ header .botao{
 	border-radius: 20%;
 }
 
+header .botao:hover{
+	background: rgba(143,63,175,.7);
+	padding: 13px 35px;
+	transition: all .8s;
+
+}
 
 header p {margin:0 1em 2em;}
 
@@ -217,6 +230,13 @@ header p {margin:0 1em 2em;}
 #sobre .botao {
 	background-color: #f1f1f1;
 	color: #4d4d4d;
+	padding: 10px 25px;
+}
+
+#sobre .botao:hover {
+	background-color: rgba(241,241,241,.9);
+	padding: 10px 30px;
+	transition: .8s;
 }
 
 
@@ -317,7 +337,8 @@ header p {margin:0 1em 2em;}
 	cursor: pointer;
 }
 #formulario button:hover{
-	background: #8f3faf;
+	background: rgba(38,38,38,.8);
+	transition: all .7s;
 }
 
 #formulario fieldset h2{
@@ -366,7 +387,46 @@ header p {margin:0 1em 2em;}
 	border-radius: 50%;
 	margin: 20px 5px;
 }
+.icones:hover{
+	/* border: 2px solid #262626; */
+	background: rgba(255,255,255,.2);	
+	transition: all .7s;
+}
+.icones:hover path{
+	/* fill: #262626; */
+	transition: all .7s;
+}
 
+/*BTN VOLTAR AO TOPO________________________________*/
+
+.btnTopo{
+	position: fixed;
+	width: 25px;
+	height: 25px;
+	right: 2%;
+	bottom: 30px;
+	background: #8f3faf;
+	display: none;
+	border-radius: 4px;
+	text-align: center;
+
+}
+
+.btnTopo a{
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	color: #f1f1f1;
+	font-size: 20px;
+}
+
+.btnTopo:hover{
+	background: rgba(143,63,175,.7);
+	transition: all .5s;
+}
 
 
 

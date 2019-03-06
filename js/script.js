@@ -39,3 +39,33 @@ $('.botao').click(function(e){
 	}, 500);
 
 });
+
+// função esconder e aparecer btn voltar ao topo
+
+var btnVoltar = $(".btnTopo");
+
+$(window).scroll(function(){
+	var menuHeight = $('nav div').innerHeight(),
+	headerHeight = $('header').innerHeight();
+	if($(this).scrollTop()>headerHeight-menuHeight){
+		btnVoltar.fadeIn(0);
+	}else{
+		btnVoltar.fadeOut(0);
+	}
+})
+
+// click btn voltar ao topo
+
+btnVoltar.click(function(e){
+	e.preventDefault();
+	
+	$('html, body').animate({
+		scrollTop: 0}, 500);
+
+});
+
+btnVoltar.hover(function(){
+	$('div.btnTopo a').addClass("animated bounceInUp").one("animationend",function(){
+		$(this).removeClass("animated bounceInUp");
+	});
+});
